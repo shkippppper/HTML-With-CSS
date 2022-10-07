@@ -1,0 +1,88 @@
+
+/* SELECTORS: */
+    
+/*
+    UNIVERSAL SELECTOR - * {declaration} applies to all the elements in the document */
+
+/*  THIS SECTION IS COMMENTED SO IT DOENST OVERRIDE OTHERS
+   * {
+        color: #570a0a;
+    }
+*/  
+
+/*
+    TYPE SELECTOR      - h1, h2, h3 {declaration} mathes element names */
+    h1, h2, h3 {
+        color: #570a0a;
+    }
+/*
+    CLASS SELECTOR     -  .note {declaration}  (.class) targets any element whose class attribute is note
+                       - p.note {declaration}  (tag.class) targets only <p> elements whose class attribute has a value of note*/
+    .note {
+        color: #130202;
+    }
+    p.note{
+        color: #1c8d54;
+    }
+
+/* ID SELECTOR         - #intro {declaration} (#id) targets the element whose id attribute has a value of intro*/
+
+    #intro {
+        color: #d144fc;
+    }
+
+/* CHILD SELECTOR      - li>a {declaration} targets any <a> elements that are children of an <li> element but no
+ other <a> elements on the page */
+
+    li>a {
+        color: #65de0e;
+    }
+
+/* DESCENDANT SELECTOR - p a {declaration} targets any <a> elements that sit inside a <p> element, even if there are 
+other elements nested between them */
+
+    p b {
+        color: #109e9e;
+    }
+
+/* ADJACENT SIBLING SELECTOR - h1+p {declaration} targets the first <p> element after any <h1> element (but not other
+<p> elements) */
+
+    h1+p {
+        color: #41222a;
+        font-size: larger;
+    }
+
+/* GENERAL SIBLING SELECTOR - h4~p {declaration} Matches an element that is a sibling of another, although it
+does not have to be the directly preceding element */
+
+    h4~p {
+        color: #65de0e;
+        font-size: larger;
+    }
+/* Use !important after the value to indicate that it should be considered more important than other rules */
+    #impo{
+        
+        color: #109e9e !important;
+        color: #570a0a;
+    }
+
+/* INHERITANCE */
+/* we can specify some rules which will apply to all the elements on the website, such as a font or alignment, we can
+simply put this as a body {declaration} which will affect all the elements that are within the BODY  */
+
+    body {
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
