@@ -1,0 +1,67 @@
+body{
+    text-align: center;
+}
+/* COLORS IN CSS */
+
+/* RGB VALUES */
+    #rgb1 {
+        color:rgb(50, 100, 150);
+    }
+
+    #rgb2 {
+        color: rgb(200, 100, 150);
+    }
+
+/* COLOR NAMES */
+
+    #ColorName1 {
+        color: aqua;
+    }
+
+    #ColorName2 {
+        color: brown;
+    }
+
+/* HEX CODES */
+
+    #Hex1 {
+        color: #123123;
+    }
+
+    #Hex2 {
+        color: #321321;
+    }
+
+/* BACKGROUND COLOR */
+
+    #box {
+        background-color: black;
+        color: white;
+    }
+
+    #insidebox {
+        background-color: aqua;
+        color: rgb(169, 29, 141);
+        padding: 10px ;
+    }
+
+
+/* HSL and HSLA */
+
+    /* HSL stands for HUE, SATURATION and LIGHTNESS, HUE IS 0-360, SATURATION 0-100%, LIGHTNESS 0-100% */
+    #hsl1 {
+        color: hsl(100, 50%, 70%);
+    }
+
+    #hsl2 {
+        color: hsl(0, 100%, 70%);
+    }
+
+    /* HSLA stands for HUE, SATURATION, LIGHTNESS and ALPHA HUE IS 0-360, SATURATION 0-100%, LIGHTNESS 0-100%, ALPHA 0-100% */
+    #hsla1 {
+        color: hsla(150, 50%, 50%, 50%);
+    }
+
+    #hsla2 {
+        color: hsla(200, 100%, 30%, 80%);
+    }
