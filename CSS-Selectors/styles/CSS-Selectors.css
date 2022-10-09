@@ -67,6 +67,7 @@ does not have to be the directly preceding element */
         color: #570a0a;
     }
 
+
 /* INHERITANCE */
 /* we can specify some rules which will apply to all the elements on the website, such as a font or alignment, we can
 simply put this as a body {declaration} which will affect all the elements that are within the BODY  */
@@ -76,6 +77,45 @@ simply put this as a body {declaration} which will affect all the elements that 
         text-align: center;
     }
 
+/* ATTRIBUTE SELECTORS:
+    EXISTENCE - [] Matches a specific attribute , "p[class]" Targets any <p> element with an attribute called class
+    EQUALITY - [=] Matches a specific attribute with a specific value p[class="dog"] Targets any <p> element with
+                an attribute called class whose value is dog.
+    SPACE - [~=] Matches a specific attribute whose value appears in a spaceseparated list of words. p[class~="dog"]
+                Targets any <p> element with an attribute called class whose value is a list of space-separated
+                words, one of which is dog
+    PREFIX -[^=] Matches a specific attribute whose value begins with a specific string. p[attr^"d"] Targets any 
+            <p> element with an attribute whose value begins with the letter "d".
+    SUBSTRING - [*=] Matches a specific attribute whose value contains a specific substring. p[attr*"do"]Targets any
+                <p> element with an attribute whose value contains the letters "do".
+    SUFFIX - [$=] Matches a specific attribute whose value ends with a specific string. p[attr$"g"] Targets any
+            <p> element with an attribute whose value ends with the letter "g".
+
+*/
+
+    b[class]{
+        color: #1d49da;
+    }
+
+    b[class="selectorwithequals"]{
+        color: blueviolet;
+    }
+
+    b[class~="space"]{
+        color: #1bd478;
+    }
+
+    b[class^="S"]{
+        color: rgb(181, 194, 32);
+    }
+
+    b[class*="aka"]{
+        color: #d144fc;
+    }
+
+    b[class$="aka"]{
+        color: brown;
+    }
 
 
 
